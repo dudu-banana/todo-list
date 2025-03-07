@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo_main</title>
+    <link rel="stylesheet" href="todo_main.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <img src="close_pic.png" alt="배너 이미지">   
+        </div>
+        <h1 class="title">to-do list</h1>
+        <div class="task-list">
+            <div class="task">
+                <img src="full heart.png" alt="꽉찬하트"> 
+                <input type="text" class="task-input" readonly value="">
+                <button class="delete-btn">
+                    <img src="trash_icon.png" alt="삭제" class="delete-icon">
+                </button>
+            </div>
+            <div class="task">
+                <img src="heart.png" alt="빈하트트"> 
+                <input type="text" class="task-input" readonly value="">
+                <button class="delete-btn">
+                    <img src="trash_icon.png" alt="삭제" class="delete-icon">
+                </button>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="bottom-con">
+                <img src="full heart.png" alt="꽉찬하트"> 
+                <input type="text" class="bottom-input" placeholder="Add a task...">
+            </div>
+            <button class="add-btn">ADD</button>
+        </div>
+    </div>
+    <script src="todo_main.js"></script>
+</body>
+</html>
