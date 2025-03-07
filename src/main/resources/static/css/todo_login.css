@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+
+
+/* body 요소를 화면 정중앙에 위치하도록 설정 */
+body {
+    display: flex; /* flexbox를 사용하여 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    height: 100vh; /* 화면 전체 높이를 차지하도록 설정 */
+    
+    /* 부드러운 그라디언트 배경 */
+    background: linear-gradient(180deg, rgba(255, 186, 186, 0.68) 0%, rgba(248, 186, 253, 0.6) 100%);
+}
+
+/* 로그인 창 컨테이너 */
+.login-container {
+    position: relative; /* 내부 요소의 절대 위치를 설정할 기준이 됨 */
+    width: 631px; /* 로그인 창 너비 */
+    height: 320px; /* 로그인 창 높이 */
+    
+    /* 배경색 및 테두리 스타일 설정 */
+    background: #FFF3E2;
+    border: 4px solid #614D46;
+    
+    /* 그림자 효과 추가 */
+    box-shadow: 15px 15px 0px #614D46;
+    
+    /* 둥근 모서리 설정 */
+    border-radius: 25px;
+    
+    /* 내부 요소 정렬을 위한 flexbox 사용 */
+    display: flex;
+    flex-direction: column; /* 세로 방향 정렬 */
+    align-items: center; /* 가로 중앙 정렬 */
+    justify-content: center; /* 세로 중앙 정렬 */
+}
+
+/* 창의 상단 바 (타이틀 바) */
+.header {
+    position: absolute;
+    top: -1.5%; /* 컨테이너의 높이 맞춰서서 */
+    width: 100%; /* 컨테이너 전체 너비 */
+    height: 46px; /* 상단 바 높이 */
+    
+    /* 배경색 및 테두리 스타일 */
+    background: #FFD16E;
+    border: 4px solid #614D46;
+    
+    /* 위쪽 모서리만 둥글게 */
+    border-radius: 25px 25px 0 0;
+}
+.header img {
+    position: absolute;
+    top: 10px; /* 위쪽 여백 */
+    right: 15px; /* 오른쪽 여백 */
+    width: 4%; /* 이미지 크기 */
+    height: auto; /* 비율 유지 */
+
+}
+
+/* 로그인 타이틀 스타일 */
+.login-title {
+    font-family: 'Bungee', cursive; /* 폰트 스타일 */
+    font-size: 35px; /* 글자 크기 */
+    color: #614D49; /* 글자 색상 */
+    padding: 0px;
+    margin-top: 35px; /* 아래쪽 여백 추가 */
+}
+
+/* 입력 필드 스타일 */
+.input-field {
+    width: 65%; /* 부모 컨테이너 대비 80% 너비 */
+    height: 33px; /* 입력 필드 높이 */
+    margin-top: 10px;
+    margin-bottom: 10px; /* 아래쪽 여백 */
+    padding: 5px; /* 내부 여백 */
+    font-size: 20px; /* 글자 크기 */
+    
+    /* 테두리 스타일 */
+    border: 3px solid #614D49;
+}
+
+.button-container {
+    display: flex; /* 가로 정렬 */
+    justify-content: center; /* 가운데 정렬 */
+    gap: 20px; /* 버튼 사이 간격 */
+}
+/* 로그인 버튼 스타일 */
+.signin-btn, .signup-btn {
+    width: 120px; /* 버튼 너비 */
+    height: 40px; /* 버튼 높이 */
+    margin-top: 10px;
+    background: #FFFFFF; /* 기본 배경색 */
+    border: 3px solid #614D49; /* 테두리 스타일 */
+    
+    /* 폰트 스타일 */
+    font-family: 'Bungee', cursive;
+    font-size: 18px; /* 글자 크기 */
+    color: #604D49; /* 글자 색상 */
+    text-align: center; /* 글자 중앙 정렬 */
+    
+    /* 마우스를 올렸을 때 클릭할 수 있음을 나타냄 */
+    cursor: pointer;
+}
+
+
+/* 로그인 버튼에 마우스를 올렸을 때 배경색 변경 */
+.signin-btn:hover {
+    background: #FFD16E;
+}
+
+.signup-btn:hover {
+    background: #92A1FF;
+}
